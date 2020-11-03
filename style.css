@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.navbar-dark {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0 5%;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.nav-item {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.cover-banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/house4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.cover-banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cover-banner-text h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    animation: animate-text 3s ease-in-out;
+}
+
+.cover-banner-text p {
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    animation: animate-text 3s ease-in;
+}
+
+.cover-banner-text a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 1rem 2rem;
+    animation: animate-text 3s ease-in-out;
+}
+
+.cover-banner-text a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes animate-text {
+    0% {
+
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.about-section {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.about-section-text {
+    width: 50%;
+}
+
+.about-section-text h2 {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-section-text p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 0 7rem;
+}
+
+.about-section-image {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.about-section-image img {
+    width: 100%;
+    height: auto;
+    mix-blend-mode: overlay;
+
+}
+
+.services-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.services-section-paint {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/house3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-section-drywall {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/house2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-section-garage-floor {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/garage.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-text-wrapper {
+    color: white;
+}
+
+.service-text-wrapper h4 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.service-text-wrapper p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 0 2rem;
+}
+
+.why-us-section {
+    margin: 5rem 0;
+}
+
+.why-us-section-description {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.why-us-section-description h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.why-us-section-description p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    width: 50%;
+    text-align: center;
+}
+
+.why-us-section-attributes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    margin: 0 10rem;
+}
+
+.attribute {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: 2rem;
+}
+
+.attribute i {
+    font-size: 4rem;
+}
+
+.attribute h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 1.1rem;
+}
+
+.attribute p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-container h3 {
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/house8.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 3rem 0;
+}
+
+.testimonial1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial1 .quote {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 6rem;
+    font-family: sans-serif;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.testimonial1 .quote p {
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.testimonial1 .text {
+    width: 60%;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-align: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+    font-style: italic;
+}
+
+.testimonial1 .author {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.testimonial1 .location {
+    margin-top: -.5rem;
+    color: white;
+    opacity: .3;
+}
+
+.service-areas {
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-areas h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.service-areas .areas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50vw;
+}
+
+.service-areas .areas p {
+    justify-self: center;
+    align-self: center;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    color: rgb(139, 134, 134);
+    margin: 0;
+}
+
+footer p a {
+    color: white;
+    font-size: 1.1rem;
+    margin-left: .3rem;
+}
+
+footer p a:hover {
+    text-decoration: none;
+    color: white;
+    opacity: .5;
+}
+
+@media only screen and (max-width: 1280px) {
+    .why-us-section-description p {
+        width: 70%;
+    }
+
+    .why-us-section-attributes {
+        margin: 0;
+    }
+
+    .attribute i {
+        font-size: 3rem;
+    }
+
+    .attribute p {
+        letter-spacing: 0;
+        padding: 1rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-item {
+        font-size: 1rem;
+    }
+
+    .cover-banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .cover-banner-text p {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+
+    .cover-banner-text a {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .about-section-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-text-wrapper h4 {
+        font-size: 1.5rem;
+    }
+
+    .about-section-text p {
+        padding: 0 2rem;
+    }
+
+    .service-text-wrapper p {
+        letter-spacing: 0;
+    }
+
+    .why-us-section-attributes {
+        margin: 0;
+    }
+
+    .why-us-section-description h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0;
+    }
+
+    .why-us-section-description p {
+        width: 70%;
+    }
+
+    .attribute h4 {
+        font-size: 1.2rem;
+    }
+
+    .swiper-container h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .about-section-text {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .about-section-text p {
+        padding: 0 3rem;
+    }
+
+    .about-section-image {
+        display: none;
+    }
+
+    .service-text-wrapper p {
+        padding: 0 3rem;
+    }
+
+    .why-us-section-description p {
+        width: 100%;
+        padding: 0 3rem;
+    }
+
+    .attribute p {
+        padding: 1rem 1rem;
+    }
+
+    .testimonial1 .text {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .cover-banner-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .cover-banner-text p {
+        font-size: 1.1rem;
+        width: 60%;
+        text-align: center;
+    }
+
+    .cover-banner-text a {
+        font-size: .8rem;
+        padding: .5rem;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .cover-banner-text h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+
+    .about-section {
+        height: 100%;
+    }
+}
