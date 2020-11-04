@@ -106,17 +106,14 @@ header {
 
 .about-section {
     width: 100%;
-    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding-bottom: 4rem;
-    padding-top: 1rem;
 }
 
 .about-section-text {
-    width: 50%;
+    width: 100%;
 }
 
 .about-section-text h2 {
@@ -130,28 +127,24 @@ header {
 .about-section-text p {
     font-size: 1.1rem;
     letter-spacing: 1px;
-    padding: 0 7rem;
+    padding: 0 3rem;
 }
 
 .about-section-image {
-    width: 50%;
-    height: 50%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
 
 }
 
 .about-section-image img {
     width: 100%;
-    height: auto;
     mix-blend-mode: overlay;
-
+    background-size: cover;
 }
 
 .services-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    padding-top: 2rem;
-    margin-top: -6rem;
 }
 
 .services-section-paint {
@@ -484,7 +477,7 @@ footer p a:hover {
 @media only screen and (max-width: 860px) {
     .about-section-text {
         width: 100%;
-        padding: 1rem 0;
+        padding: 3rem 0;
     }
 
     .about-section-text p {
